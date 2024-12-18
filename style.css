@@ -12,7 +12,8 @@
 * {
     margin: 0;
     padding: 0;
-
+    
+    overflow-x: hidden;
     
 
 }
@@ -123,6 +124,7 @@ h2 span {
 
 .description_button{
     padding-top: 40px;
+    width: 100%;
 
 
     
@@ -141,7 +143,7 @@ h2 span {
     overflow: hidden;
 }
 .picture_grid img {
-    width: 33vw;
+    width: 100%;
 }
 
 .bottom_section {
@@ -221,19 +223,7 @@ font-size: 32px;
     text-decoration: none;
 
 }
-@media (max-width: 1630px) {
 
-    .bottom_section {
-        flex-direction: column;
-    }
-    .bottom_footer {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        padding-top: 15px;
-        gap: 0;
-    }
-}
 .credit {
     
     display: flex;
@@ -248,4 +238,87 @@ font-weight: 800;
 line-height: normal;
 }
 
+@media (max-width: 1630px) {
+
+    .bottom_section {
+        flex-direction: column;
+    }
+    .bottom_footer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 15px;
+        gap: 0;
+    }
+}
+
+.icon_burger {
+    display: none;
+}
+
+.menu_mobile{
+    z-index: 999;
+    background-color: #363636;
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    text-align: center;
+   margin-top: -130px;
+   padding-top: 50px;
+   display: none;
+
+}
+
+.menu_mobile a {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+@media (max-width: 550px) {
+
+.icon_burger{
+    display: block;}
+
+    .nav {
+        display: none;
+    }
+
+    .hero_text{
+        font-family: 'Besley',serif;
+        margin-top: 70px;
+    }
+    
+    .hero_text h1 {
+        font-size: 60px;
+    }
+    .description_card{
+        padding: 50px;
+        width: 430px;
+        overflow: hidden;
+    }
+    .footer_column ul a{
+        overflow-y: hidden;
+        padding: 0;
+        padding-bottom: 2px;
+    }
+    .description_button{
+        padding-top: 40px;
+        width: 100%;
+    
+    
+        
+    
+    }
+    .description_card{
+        padding: 10px;
+    }
+    .register_btn{
+        background-color: #363636;
+        margin-left: 5px;
+    }
+    .form{
+        padding: 10px;
+    }
+    
+}
 
