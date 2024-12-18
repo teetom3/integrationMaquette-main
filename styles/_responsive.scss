@@ -1,0 +1,54 @@
+@media (max-width: 550px) {
+
+    .icon_burger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero_text {
+        font-family: 'Besley', serif;
+        margin-top: 70px;
+    }
+
+    .hero_text h1 {
+        font-size: 60px;
+    }
+
+    .description_card {
+        padding: 50px;
+        width: 430px;
+        overflow: hidden;
+    }
+
+    .footer_column ul a {
+        overflow-y: hidden;
+        padding: 0;
+        padding-bottom: 2px;
+    }
+
+    .description_button {
+        padding-top: 40px;
+        width: 100%;
+
+
+
+
+    }
+
+    .description_card {
+        padding: 10px;
+    }
+
+    .register_btn {
+        background-color: #363636;
+        margin-left: 5px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+}
